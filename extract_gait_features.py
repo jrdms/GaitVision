@@ -29,7 +29,8 @@ def extract_features(video_path, output_csv):
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = pose.process(rgb_frame)
 
-        if results.pose_landmarks:
+        # if results.pose_landmarks:
+        if hasattr(results, "pose_landmarks") and results.pose_landmarks:
             landmarks = results.pose_landmarks.landmark
             # Extract relevant landmarks
             lw = landmarks[mp_pose.PoseLandmark.LEFT_WRIST]
