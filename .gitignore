@@ -1,0 +1,15 @@
+# Will ignore all files with the .csv extension in the repository
+*.csv
+
+# Ignore video files
+gait_video.mp4
+
+# Ignore Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+env/
+venv/

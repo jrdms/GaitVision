@@ -1,0 +1,7 @@
+opencv-contrib-python
+pytube
+mediapipe
+pandas
+yt_dlp
+opencv-python~=4.11.0.86
+yt-dlp~=2025.6.9
